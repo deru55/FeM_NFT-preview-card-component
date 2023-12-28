@@ -24,7 +24,7 @@ img {
 }
 
 body {
-  font-size: 1.125rem;
+  font-size: 1.125rem; /* 18px */
   font-family: var(--font-family-default);
   color: var(--clr-primary-1);
   background-color: var(--clr-neutral-1);
@@ -40,6 +40,7 @@ body {
   overflow: hidden;
   position: relative;
   background-color: var(--clr-primary-2);
+  cursor: pointer;
 }
 
 .card-container {
@@ -99,13 +100,13 @@ body {
 
 .middle {
   position: absolute;
+  opacity: 0;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  transform: translate(-50%, -50%);
 }
 
 .section-img:hover .img-equilibrium {
-  cursor: pointer;
   opacity: 0.3;
 }
 
