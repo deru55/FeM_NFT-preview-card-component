@@ -38,6 +38,8 @@ body {
 .section-img {
   border-radius: 0.5rem;
   overflow: hidden;
+  position: relative;
+  background-color: var(--clr-primary-2);
 }
 
 .card-container {
@@ -48,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 21rem;
 }
 
 .section-title {
@@ -90,5 +93,22 @@ body {
 
 .section-title:hover,
 .author span:hover {
-    color: var(--clr-primary-1);
+  cursor: pointer;
+  color: var(--clr-primary-2);
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.section-img:hover .img-equilibrium {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.section-img:hover .middle {
+  opacity: 1;
 }
